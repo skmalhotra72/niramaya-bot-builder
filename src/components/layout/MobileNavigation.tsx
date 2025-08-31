@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
-import { Menu, Phone, MessageCircle } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface MobileNavigationProps {
@@ -17,9 +17,6 @@ const MobileNavigation = ({ className }: MobileNavigationProps) => {
     { href: "/", label: "Home" },
     { href: "/tests", label: "Tests & Prices" },
     { href: "/packages", label: "Health Packages" },
-    { href: "/home-collection", label: "Home Collection" },
-    { href: "/corporate", label: "Corporate" },
-    { href: "/support", label: "Support" },
     { href: "/about", label: "About Us" },
     { href: "/download-reports", label: "Download Reports" },
   ];
@@ -67,16 +64,7 @@ const MobileNavigation = ({ className }: MobileNavigationProps) => {
           })}
           
           {/* Mobile Actions */}
-          <div className="pt-4 border-t space-y-3">
-            <Button 
-              variant="outline" 
-              className="w-full justify-start"
-              onClick={() => setOpen(false)}
-            >
-              <MessageCircle className="h-4 w-4 mr-2" />
-              Ask Nira Chatbot
-            </Button>
-            
+          <div className="pt-4 border-t space-y-3">            
             <Button 
               asChild
               className="w-full bg-medical-accent hover:bg-medical-accent/90 text-medical-accent-foreground"

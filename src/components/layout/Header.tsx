@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "./Navigation";
 import { MobileNavigation } from "./MobileNavigation";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
 
 const Header = () => {
   const location = useLocation();
@@ -29,31 +29,19 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-medical">
-              <div className="text-brand-saffron font-bold text-xl">न</div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-brand-teal">NirAmaya</span>
-              <span className="text-xs text-muted-foreground">PATHLABS</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/dd2f471b-f995-4d4c-a42e-ca91cc9de2fc.png" 
+              alt="NirAmaya Pathlabs" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
           <Navigation className="hidden md:flex" />
 
           {/* Action Buttons */}
-          <div className="flex items-center gap-2">
-            {/* Chatbot Trigger */}
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-brand-teal hover:text-brand-teal-light hidden sm:flex"
-            >
-              <MessageCircle className="h-4 w-4 mr-2" />
-              Ask Nira
-            </Button>
-            
+          <div className="flex items-center gap-2">            
             {/* CTA Button */}
             <Button 
               asChild

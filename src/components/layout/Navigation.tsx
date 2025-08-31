@@ -13,9 +13,6 @@ const Navigation = ({ className }: NavigationProps) => {
     { href: "/", label: "Home" },
     { href: "/tests", label: "Tests & Prices" },
     { href: "/packages", label: "Health Packages" },
-    { href: "/home-collection", label: "Home Collection" },
-    { href: "/corporate", label: "Corporate" },
-    { href: "/support", label: "Support" },
   ];
   
   return (
