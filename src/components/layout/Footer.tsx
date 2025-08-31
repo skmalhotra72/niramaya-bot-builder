@@ -10,14 +10,12 @@ const Footer = () => {
         <div className="py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-saffron">
-                <div className="text-brand-teal font-bold text-xl">न</div>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold">NirAmaya</span>
-                <span className="text-xs text-brand-teal-lighter">PATHLABS</span>
-              </div>
+            <div className="flex items-center">
+              <img 
+                src="/lovable-uploads/67f2308d-34e9-4e1b-897e-2ff9d5f5e3e3.png" 
+                alt="NirAmaya Pathlabs" 
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-brand-teal-lighter text-sm leading-relaxed">
               NABL-accredited diagnostic laboratory committed to quality healthcare with 360° transparency and patient care.

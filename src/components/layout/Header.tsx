@@ -31,7 +31,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/dd2f471b-f995-4d4c-a42e-ca91cc9de2fc.png" 
+              src="/lovable-uploads/67f2308d-34e9-4e1b-897e-2ff9d5f5e3e3.png" 
               alt="NirAmaya Pathlabs" 
               className="h-12 w-auto"
             />

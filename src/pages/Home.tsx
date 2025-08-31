@@ -61,7 +61,7 @@ const Home = () => {
   const trustFactors = [
     { icon: Shield, text: "NABL Accredited Lab" },
     { icon: Clock, text: "Fastest TAT Reports" },
-    { icon: Users, text: "9+ Years of Excellence" },
+    { icon: Users, text: "11+ years of Excellence" },
     { icon: CheckCircle, text: "360° Quality Assurance" }
   ];
 

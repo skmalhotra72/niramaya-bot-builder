@@ -33,14 +33,12 @@ const MobileNavigation = ({ className }: MobileNavigationProps) => {
       <SheetContent side="right" className="w-80">
         <SheetHeader>
           <SheetTitle className="text-left">
-            <div className="flex items-center space-x-3">
-              <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-medical">
-                <div className="text-brand-saffron font-bold text-lg">न</div>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-brand-teal">NirAmaya</span>
-                <span className="text-xs text-muted-foreground">PATHLABS</span>
-              </div>
+            <div className="flex items-center">
+              <img 
+                src="/lovable-uploads/67f2308d-34e9-4e1b-897e-2ff9d5f5e3e3.png" 
+                alt="NirAmaya Pathlabs" 
+                className="h-12 w-auto"
+              />
             </div>
           </SheetTitle>
         </SheetHeader>
