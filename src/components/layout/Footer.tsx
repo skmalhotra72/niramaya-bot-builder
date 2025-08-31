@@ -45,7 +45,6 @@ const Footer = () => {
                 <div>
                   <div className="font-medium text-white">24×7 Helpdesk</div>
                   <div>9555009009</div>
-                  <div>9958824555</div>
                 </div>
               </li>
               <li className="flex items-center gap-3">

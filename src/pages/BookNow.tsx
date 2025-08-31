@@ -462,9 +462,6 @@ const BookNow = () => {
                     <a href="tel:9555009009" className="block text-sm font-medium text-brand-teal hover:underline">
                       9555009009
                     </a>
-                    <a href="tel:9958824555" className="block text-sm font-medium text-brand-teal hover:underline">
-                      9958824555
-                    </a>
                   </div>
                 </div>
                 

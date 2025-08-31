@@ -77,7 +77,7 @@ const MobileNavigation = ({ className }: MobileNavigationProps) => {
                 <Phone className="h-4 w-4" />
                 <div>
                   <div className="font-medium text-foreground">24×7 Helpdesk</div>
-                  <div>9555009009 | 9958824555</div>
+                  <div>9555009009</div>
                 </div>
               </div>
             </div>

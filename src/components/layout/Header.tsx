@@ -16,7 +16,7 @@ const Header = () => {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
-              <span>24×7 Helpdesk: 9555009009 | 9958824555</span>
+              <span>24×7 Helpdesk: 9555009009</span>
             </div>
           </div>
           <div className="hidden md:flex items-center gap-4">
