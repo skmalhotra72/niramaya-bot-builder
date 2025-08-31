@@ -2,39 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* NirAmaya Pathlabs Design System - Professional Medical with Vibrant Accents
+All colors MUST be HSL for consistency.
 */
 
 @layer base {
   :root {
+    /* Base palette inspired by NirAmaya branding */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 200 25% 15%;
+    
+    /* Brand colors - Deep teal (trust) + Golden saffron (vitality) */
+    --brand-teal: 175 45% 25%;
+    --brand-teal-light: 175 35% 35%;
+    --brand-teal-lighter: 175 25% 85%;
+    --brand-saffron: 45 90% 50%;
+    --brand-saffron-light: 45 85% 65%;
+    --brand-gold: 40 85% 45%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 200 25% 15%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 200 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary = Brand teal for trust and medical authority */
+    --primary: 175 45% 25%;
+    --primary-foreground: 0 0% 98%;
+    
+    /* Secondary = Light teal for subtle backgrounds */
+    --secondary: 175 25% 95%;
+    --secondary-foreground: 175 45% 25%;
+    
+    /* Medical accent = Saffron for CTAs and highlights */
+    --medical-accent: 45 90% 50%;
+    --medical-accent-foreground: 0 0% 15%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 175 20% 95%;
+    --muted-foreground: 175 15% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 175 25% 90%;
+    --accent-foreground: 175 45% 20%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Success for medical results */
+    --success: 140 50% 45%;
+    --success-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 175 20% 90%;
+    --input: 175 15% 94%;
+    --ring: 175 45% 25%;
+    
+    /* Medical gradients for hero sections */
+    --gradient-medical: linear-gradient(135deg, hsl(var(--brand-teal)), hsl(var(--brand-teal-light)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--brand-saffron)), hsl(var(--brand-gold)));
+    
+    /* Shadows with brand colors */
+    --shadow-medical: 0 10px 30px -10px hsl(var(--brand-teal) / 0.3);
+    --shadow-accent: 0 5px 20px -5px hsl(var(--brand-saffron) / 0.4);
 
     --radius: 0.5rem;
 
@@ -56,20 +83,23 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 200 30% 8%;
+    --foreground: 175 25% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 200 25% 12%;
+    --card-foreground: 175 25% 95%;
+    
+    --popover: 200 25% 10%;
+    --popover-foreground: 175 25% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --primary: 175 40% 85%;
+    --primary-foreground: 175 45% 15%;
+    
+    --medical-accent: 45 85% 55%;
+    --medical-accent-foreground: 0 0% 10%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 175 35% 15%;
+    --secondary-foreground: 175 25% 90%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
