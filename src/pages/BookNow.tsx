@@ -467,8 +467,8 @@ const BookNow = () => {
                 
                 <div>
                   <p className="text-sm text-muted-foreground mb-2">Email Support</p>
-                  <a href="mailto:care@niramayapathlabs.com" className="text-sm text-brand-teal hover:underline">
-                    care@niramayapathlabs.com
+                  <a href="mailto:helpline@niramayapathlabs.com" className="text-sm text-brand-teal hover:underline">
+                    helpline@niramayapathlabs.com
                   </a>
                 </div>
 
