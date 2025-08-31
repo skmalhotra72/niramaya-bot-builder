@@ -132,19 +132,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        {/* Floating Chat Prompt */}
-        <div className="absolute bottom-8 right-8 hidden lg:block">
-          <Card className="bg-white/10 backdrop-blur border-white/20 p-4 text-center">
-            <div className="flex items-center space-x-3 text-white">
-              <MessageCircle className="h-5 w-5 text-brand-saffron" />
-              <div className="text-left">
-                <div className="font-medium text-sm">Ask Nira Assistant</div>
-                <div className="text-xs text-brand-teal-lighter">Tests • Prices • Booking</div>
-              </div>
-            </div>
-          </Card>
-        </div>
       </section>
 
       {/* Quick Services */}
