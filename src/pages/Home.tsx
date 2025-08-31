@@ -66,10 +66,10 @@ const Home = () => {
   ];
 
   const stats = [
-    { value: "50,000+", label: "Tests Completed" },
+    { value: "20,00,000+", label: "Tests Completed" },
     { value: "99.8%", label: "Accuracy Rate" },
     { value: "24×7", label: "Support Available" },
-    { value: "100+", label: "Test Parameters" }
+    { value: "1000+", label: "Test Parameters" }
   ];
 
   return (
