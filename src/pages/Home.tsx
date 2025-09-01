@@ -82,7 +82,7 @@ const Home = () => {
             {/* Main Headline */}
             <div className="mb-6">
               <Badge className="bg-brand-saffron text-brand-teal mb-4 px-4 py-2 text-sm font-medium">
-                NABL Accredited • Trusted by Thousands
+                NABL Accredited • Trusted by Millions
               </Badge>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Quality Healthcare
