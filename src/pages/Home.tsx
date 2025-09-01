@@ -97,19 +97,18 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Main CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button 
                 asChild
                 size="lg" 
-                className="bg-brand-saffron hover:bg-brand-gold text-brand-teal font-semibold px-8 py-4 text-lg shadow-accent"
+                className="bg-brand-saffron hover:bg-brand-gold text-brand-teal font-semibold shadow-accent"
               >
-                <Link to="/book-now">
+                <Link to="/book-now" className="h-11 px-8 py-4 text-lg">
                   <Calendar className="mr-2 h-5 w-5" />
                   Free Home Collection
                 </Link>
               </Button>
-              <div className="bg-white text-brand-teal border-white border-2 rounded-lg px-8 py-4 text-lg font-semibold shadow-lg flex items-center justify-center min-h-[3.5rem]">
+              <div className="bg-white text-brand-teal border-white border-2 rounded-md h-11 px-8 text-lg font-semibold shadow-lg flex items-center justify-center">
                 Chat in any Language
               </div>
             </div>
