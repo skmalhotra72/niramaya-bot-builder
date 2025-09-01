@@ -47,7 +47,7 @@ const Header = () => {
               asChild
               className="bg-medical-accent hover:bg-medical-accent/90 text-medical-accent-foreground font-medium"
             >
-              <Link to="/book-now">Free Home Collection</Link>
+              <Link to="/book-now">Serving 3000+ pincodes</Link>
             </Button>
 
             {/* Mobile Menu */}

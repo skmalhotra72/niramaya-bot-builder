@@ -68,7 +68,7 @@ const MobileNavigation = ({ className }: MobileNavigationProps) => {
               className="w-full bg-medical-accent hover:bg-medical-accent/90 text-medical-accent-foreground"
               onClick={() => setOpen(false)}
             >
-              <Link to="/book-now">Free Home Collection</Link>
+              <Link to="/book-now">Serving 3000+ pincodes</Link>
             </Button>
             
             {/* Contact Info */}
