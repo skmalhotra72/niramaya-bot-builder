@@ -109,16 +109,9 @@ const Home = () => {
                   Free Home Collection
                 </Link>
               </Button>
-              <Button 
-                asChild
-                variant="outline" 
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-brand-teal px-8 py-4 text-lg"
-              >
-                <div>
-                  Chat in any language
-                </div>
-              </Button>
+              <div className="border-white text-white border-2 rounded-lg px-8 py-4 text-lg font-medium">
+                Chat in any language
+              </div>
             </div>
 
             {/* Trust Strip */}
