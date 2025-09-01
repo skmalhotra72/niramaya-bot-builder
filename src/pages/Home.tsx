@@ -109,8 +109,8 @@ const Home = () => {
                   Free Home Collection
                 </Link>
               </Button>
-              <div className="border-white text-white border-2 rounded-lg px-8 py-4 text-lg font-medium">
-                Chat in any language
+              <div className="bg-white text-brand-teal border-white border-2 rounded-lg px-8 py-4 text-lg font-medium shadow-lg">
+                Chat in any Language
               </div>
             </div>
 
