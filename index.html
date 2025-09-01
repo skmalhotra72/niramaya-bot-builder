@@ -19,11 +19,27 @@
     
     <!-- n8n Chat Widget CSS -->
     <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-    <script type="module">
-      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    <script defer src="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.js"></script>
+    <script>
+      window.n8nChat.init({
+        chatId: "niramaya-pathlabs-chat",
+        webhookUrl: "https://n8n.nhcare.in/webhook/a7d29007-dd53-4270-8838-1c35ed5d027b/chat",
 
-      createChat({
-        webhookUrl: 'https://n8n.nhcare.in/webhook/a7d29007-dd53-4270-8838-1c35ed5d027b/chat'
+        i18n: {
+          en: {
+            title: "Welcome to NirAmaya Pathlabs",
+            subtitle: "NABL Accredited · 24x7 Helpdesk · Best-in-class Patient Care",
+            inputPlaceholder: "Type your message..."
+          }
+        },
+
+        initialMessages: [
+          { text: "🙏 Namaste!" },
+          { text: "We can chat in Hindi, English, Hinglish, and many other Indian languages." },
+          { text: "I can help you with any question related to lab tests and health checkup packages." },
+          { text: "I can also help you with information about lab tests, pricing, discounts, and booking." },
+          { text: "Kindly let me know — which language would you like to chat in today?" }
+        ]
       });
     </script>
   </head>
