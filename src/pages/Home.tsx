@@ -106,7 +106,7 @@ const Home = () => {
               >
                 <Link to="/book-now">
                   <Calendar className="mr-2 h-5 w-5" />
-                  Book Home Collection
+                  Free Home Collection
                 </Link>
               </Button>
               <Button 
@@ -115,9 +115,9 @@ const Home = () => {
                 size="lg"
                 className="border-white text-white hover:bg-white hover:text-brand-teal px-8 py-4 text-lg"
               >
-                <Link to="/packages">
-                  View Health Packages
-                </Link>
+                <div>
+                  Chat in any language
+                </div>
               </Button>
             </div>
 
