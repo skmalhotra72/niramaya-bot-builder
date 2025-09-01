@@ -109,7 +109,7 @@ const Home = () => {
                   Free Home Collection
                 </Link>
               </Button>
-              <div className="bg-white text-brand-teal border-white border-2 rounded-lg px-8 py-4 text-lg font-medium shadow-lg">
+              <div className="bg-white text-brand-teal border-white border-2 rounded-lg px-8 py-4 text-lg font-semibold shadow-lg flex items-center justify-center min-h-[3.5rem]">
                 Chat in any Language
               </div>
             </div>
