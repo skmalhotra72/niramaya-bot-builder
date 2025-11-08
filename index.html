@@ -184,32 +184,50 @@
         transform: scale(1.05) !important;
       }
 
-      /* Minimize button in header - smaller size, top right */
+      /* ALL minimize/close buttons - smaller size, top right corner */
       .n8n-chat button[class*="Close"],
       .n8n-chat button[aria-label*="close"],
-      .n8n-chat button[aria-label*="minimize"] {
+      .n8n-chat button[aria-label*="minimize"],
+      .n8n-chat div[class*="modal"] button,
+      .n8n-chat div[class*="chat"] > button:first-child {
         position: absolute !important;
-        top: 8px !important;
-        right: 8px !important;
-        z-index: 100 !important;
-        width: 28px !important;
-        height: 28px !important;
-        min-width: 28px !important;
-        padding: 4px !important;
-        background: rgba(255, 255, 255, 0.2) !important;
-        border-radius: 6px !important;
-        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        top: 12px !important;
+        right: 12px !important;
+        z-index: 1000 !important;
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+        min-height: 32px !important;
+        max-width: 32px !important;
+        max-height: 32px !important;
+        padding: 6px !important;
+        background: hsl(15 85% 55%) !important;
+        border-radius: 8px !important;
+        border: none !important;
         color: white !important;
-        font-size: 11px !important;
+        font-size: 14px !important;
         cursor: pointer !important;
         transition: all 0.2s ease !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
       }
 
       .n8n-chat button[class*="Close"]:hover,
       .n8n-chat button[aria-label*="close"]:hover,
-      .n8n-chat button[aria-label*="minimize"]:hover {
-        background: rgba(255, 255, 255, 0.3) !important;
+      .n8n-chat button[aria-label*="minimize"]:hover,
+      .n8n-chat div[class*="modal"] button:hover,
+      .n8n-chat div[class*="chat"] > button:first-child:hover {
+        background: hsl(25 80% 50%) !important;
         transform: scale(1.05) !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important;
+      }
+      
+      /* Make header area accommodate the button */
+      .n8n-chat .chat-header,
+      .n8n-chat [class*="header"] {
+        padding-right: 52px !important;
       }
     </style>
     <script type="module">
