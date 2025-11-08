@@ -184,12 +184,32 @@
         transform: scale(1.05) !important;
       }
 
-      /* Ensure minimize button stays in header */
+      /* Minimize button in header - smaller size, top right */
       .n8n-chat button[class*="Close"],
       .n8n-chat button[aria-label*="close"],
       .n8n-chat button[aria-label*="minimize"] {
-        position: relative !important;
-        z-index: 10 !important;
+        position: absolute !important;
+        top: 8px !important;
+        right: 8px !important;
+        z-index: 100 !important;
+        width: 28px !important;
+        height: 28px !important;
+        min-width: 28px !important;
+        padding: 4px !important;
+        background: rgba(255, 255, 255, 0.2) !important;
+        border-radius: 6px !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        color: white !important;
+        font-size: 11px !important;
+        cursor: pointer !important;
+        transition: all 0.2s ease !important;
+      }
+
+      .n8n-chat button[class*="Close"]:hover,
+      .n8n-chat button[aria-label*="close"]:hover,
+      .n8n-chat button[aria-label*="minimize"]:hover {
+        background: rgba(255, 255, 255, 0.3) !important;
+        transform: scale(1.05) !important;
       }
     </style>
     <script type="module">
