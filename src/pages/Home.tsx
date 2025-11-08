@@ -20,6 +20,13 @@ import {
 } from "lucide-react";
 
 const Home = () => {
+  const handleChatClick = () => {
+    const chatButton = document.querySelector('.n8n-chat [class*="toggle"]') as HTMLElement;
+    if (chatButton) {
+      chatButton.click();
+    }
+  };
+
   const quickServices = [
     {
       title: "Tests & Prices",
@@ -108,9 +115,13 @@ const Home = () => {
                   Free Home Collection
                 </Link>
               </Button>
-              <div className="bg-white text-brand-teal border-white border-2 rounded-md h-11 px-8 text-lg font-semibold shadow-lg flex items-center justify-center">
+              <button
+                onClick={handleChatClick}
+                className="bg-white text-brand-teal border-white border-2 rounded-md h-11 px-8 text-lg font-semibold shadow-lg flex items-center justify-center hover:bg-brand-teal hover:text-white transition-colors cursor-pointer"
+              >
+                <MessageCircle className="mr-2 h-5 w-5" />
                 Chat in any Language
-              </div>
+              </button>
             </div>
 
             {/* Trust Strip */}
